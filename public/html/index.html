@@ -1,0 +1,25 @@
+{% include 'inc/header.html' %}
+    <main role="main">
+        <div class="contenedor">
+            <div class="seccion secciones">
+                <div class="c_banner">
+                    <h1>Trabajar desde casa</h1>
+                </div>
+                <div class="c_categorias">
+                    {% for i in 0..5 %}
+                    <div>
+                        <img src="{{url}}/img/programador.png" alt="">
+                        <h2>Programador</h2>
+                        <div>
+                            <p>Ofertas<span>23.1k</span></p>
+                            <p>Profesionales<span>3.8k</span></p>
+                            <p>Pagos<span>$1.5M</span></p>
+                            <p>Demanda<span class="dmd-alta">alta</span></p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </main>
+{% include 'inc/footer.html' %}
